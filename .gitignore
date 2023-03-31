@@ -1,0 +1,9 @@
+/futures-signal
+Library
+.cache
+tmp
+logs
+.vscode
+.docker
+.env
+python

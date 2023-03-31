@@ -1,0 +1,28 @@
+[signaler]
+  log_path = "./logs/signaler.log"
+
+[redis]
+  addr = "redis:6379"
+
+[market]
+  intervals = ["5m", "15m"]
+
+[chart]
+  [chart.candles]
+    limit = 500
+
+[binance]
+  [binance.rate_limit]
+    requests = 200
+    duration = "1m"
+  [binance.config]
+    feed_url = "https://fapi.binance.com"
+
+[notify]
+  [notify.channels]
+    futures_recommendation = 1630847448
+  [notify.config]
+    expiration = "10m"
+
+[telegram]
+  token = "5948925858:AAFyt5WarYZZZuix7gWxkuBcUDgQYiMhtIY"
