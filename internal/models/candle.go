@@ -22,17 +22,19 @@ func (cs *Candlestick) String() string {
 	return string(b)
 }
 
-type ChartMetadata struct {
+type CandlesData struct {
+	Candles    []*Candlestick
+	CreateTime int64 `json:"create_time"`
 	UpdateTime int64 `json:"update_time"`
 }
 
-type CandleChart struct {
-	Symbol   string                    `json:"symbol"`
-	Candles  map[string][]*Candlestick `json:"candlesticks"` // interval: []candle
-	Metadata map[string]*ChartMetadata `json:"metadata"`
+type CandleSummary struct {
+	Symbol  string                  `json:"symbol"`
+	Candles map[string]*CandlesData `json:"candlesticks"` // interval: []candle
+
 }
 
-func (c *CandleChart) String() string {
+func (c *CandleSummary) String() string {
 	if c == nil {
 		return ""
 	}
@@ -41,10 +43,10 @@ func (c *CandleChart) String() string {
 	return string(b)
 }
 
-func (c *CandleChart) Len(interval string) int {
-	if c == nil {
-		return 0
-	}
+// func (c *CandleSummary) Len(interval string) int {
+// 	if c == nil {
+// 		return 0
+// 	}
 
-	return len(c.Candles[interval])
-}
+// 	return len(c.Candles[interval])
+// }

@@ -70,6 +70,10 @@ type Context interface {
 	// In the case when no related data presented, returns an empty string.
 	Text() string
 
+	// Entities returns the message entities, whether it's media caption's or the text's.
+	// In the case when no entities presented, returns a nil.
+	Entities() Entities
+
 	// Data returns the current data, depending on the context type.
 	// If the context contains command, returns its arguments string.
 	// If the context contains payment, returns its payload.
@@ -297,6 +301,17 @@ func (c *nativeContext) Text() string {
 	return m.Text
 }
 
+func (c *nativeContext) Entities() Entities {
+	m := c.Message()
+	if m == nil {
+		return nil
+	}
+	if len(m.CaptionEntities) > 0 {
+		return m.CaptionEntities
+	}
+	return m.Entities
+}
+
 func (c *nativeContext) Data() string {
 	switch {
 	case c.u.Message != nil:
@@ -440,18 +455,18 @@ func (c *nativeContext) Accept(errorMessage ...string) error {
 	return c.b.Accept(c.u.PreCheckoutQuery, errorMessage...)
 }
 
-func (c *nativeContext) Answer(resp *QueryResponse) error {
-	if c.u.Query == nil {
-		return errors.New("telebot: context inline query is nil")
-	}
-	return c.b.Answer(c.u.Query, resp)
-}
-
 func (c *nativeContext) Respond(resp ...*CallbackResponse) error {
 	if c.u.Callback == nil {
 		return errors.New("telebot: context callback is nil")
 	}
 	return c.b.Respond(c.u.Callback, resp...)
+}
+
+func (c *nativeContext) Answer(resp *QueryResponse) error {
+	if c.u.Query == nil {
+		return errors.New("telebot: context inline query is nil")
+	}
+	return c.b.Answer(c.u.Query, resp)
 }
 
 func (c *nativeContext) Set(key string, value interface{}) {

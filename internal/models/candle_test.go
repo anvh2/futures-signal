@@ -6,13 +6,15 @@ import (
 )
 
 func TestMarshalChart(t *testing.T) {
-	chart := &CandleChart{
+	chart := &CandleSummary{
 		Symbol: "BTCUSDT",
-		Candles: map[string][]*Candlestick{
+		Candles: map[string]*CandlesData{
 			"1h": {
-				{
-					Low:  "10",
-					High: "20",
+				Candles: []*Candlestick{
+					{
+						Low:  "10",
+						High: "20",
+					},
 				},
 			},
 		},

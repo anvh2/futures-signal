@@ -119,7 +119,7 @@ func (s *Server) fetchMarketSummary() error {
 						Close:     e.Close,
 					}
 
-					s.marketCache.UpdateChart(symbol).CreateCandle(interval, candle)
+					s.marketCache.UpdateSummary(symbol).CreateCandle(interval, candle)
 				}
 
 				atomic.AddInt32(&total, 1)

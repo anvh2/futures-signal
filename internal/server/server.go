@@ -1,22 +1,20 @@
 package server
 
 import (
-	"context"
 	"fmt"
 	"log"
 	"os"
 	"os/signal"
 	"syscall"
-	"time"
 
 	"github.com/anvh2/futures-signal/internal/cache"
+	"github.com/anvh2/futures-signal/internal/cache/basic"
 	"github.com/anvh2/futures-signal/internal/cache/exchange"
 	"github.com/anvh2/futures-signal/internal/cache/market"
 	"github.com/anvh2/futures-signal/internal/logger"
 	"github.com/anvh2/futures-signal/internal/services/binance"
 	"github.com/anvh2/futures-signal/internal/services/telegram"
 	"github.com/anvh2/futures-signal/internal/worker"
-	"github.com/go-redis/redis/v8"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 )
@@ -30,7 +28,7 @@ type Server struct {
 	binance       *binance.Binance
 	notify        *telegram.TelegramBot
 	worker        *worker.Worker
-	redisCli      *redis.Client
+	cache         cache.Basic
 	marketCache   cache.Market
 	exchangeCache cache.Exchange
 	retryChannel  chan *retry
@@ -43,20 +41,6 @@ func New() *Server {
 		log.Fatal("failed to init logger", err)
 	}
 
-	redisCli := redis.NewClient(&redis.Options{
-		Addr:       viper.GetString("redis.addr"),
-		Password:   viper.GetString("redis.pass"),
-		DB:         1,
-		MaxRetries: 5,
-	})
-
-	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
-	defer cancel()
-
-	if err := redisCli.Ping(ctx).Err(); err != nil {
-		log.Fatal("failed to connect to redis", err)
-	}
-
 	notify, err := telegram.NewTelegramBot(logger, viper.GetString("telegram.token"))
 	if err != nil {
 		log.Fatal("failed to new chat bot", err)
@@ -67,19 +51,14 @@ func New() *Server {
 		log.Fatal("failed to new worker")
 	}
 
-	market := market.NewMarket(viper.GetInt32("chart.candles.limit"))
-
-	exchange := exchange.New(logger)
-	binance := binance.New(logger)
-
 	return &Server{
 		logger:        logger,
-		binance:       binance,
+		binance:       binance.New(logger),
 		notify:        notify,
 		worker:        worker,
-		redisCli:      redisCli,
-		marketCache:   market,
-		exchangeCache: exchange,
+		cache:         basic.NewCache(),
+		marketCache:   market.NewMarket(viper.GetInt32("chart.candles.limit")),
+		exchangeCache: exchange.New(logger),
 		retryChannel:  make(chan *retry, 1000),
 		quitChannel:   make(chan struct{}),
 	}
@@ -96,6 +75,7 @@ func (s *Server) Start() error {
 	s.retrying()
 	s.consuming()
 	s.producing()
+	s.notifying()
 
 	sigs := make(chan os.Signal, 1)
 	done := make(chan bool)
@@ -107,7 +87,6 @@ func (s *Server) Start() error {
 		<-sigs
 		close(s.quitChannel)
 		s.worker.Stop()
-		s.redisCli.Close()
 
 		close(done)
 	}()

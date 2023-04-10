@@ -16,10 +16,13 @@ import (
 	"go.uber.org/zap"
 )
 
+var (
+	tradingInterval string = "5m"
+)
+
 func (s *Server) analyzing(ctx context.Context, data interface{}) error {
-	message := &models.CandleChart{
-		Candles:  make(map[string][]*models.Candlestick),
-		Metadata: make(map[string]*models.ChartMetadata),
+	message := &models.CandleSummary{
+		Candles: make(map[string]*models.CandlesData),
 	}
 
 	if err := json.Unmarshal([]byte(fmt.Sprint(data)), message); err != nil {
@@ -38,11 +41,15 @@ func (s *Server) analyzing(ctx context.Context, data interface{}) error {
 	}
 
 	for interval, candles := range message.Candles {
-		low := make([]float64, len(candles))
-		high := make([]float64, len(candles))
-		close := make([]float64, len(candles))
+		if candles == nil {
+			continue
+		}
 
-		for idx, candle := range candles {
+		low := make([]float64, len(candles.Candles))
+		high := make([]float64, len(candles.Candles))
+		close := make([]float64, len(candles.Candles))
+
+		for idx, candle := range candles.Candles {
 			l, _ := strconv.ParseFloat(candle.Low, 64)
 			low[idx] = l
 
@@ -63,39 +70,41 @@ func (s *Server) analyzing(ctx context.Context, data interface{}) error {
 		}
 
 		oscillator.Stoch[interval] = stoch
+	}
 
-		if !talib.WithinRangeBound(oscillator.Stoch[interval], talib.RangeBoundRecommend) {
-			return errors.New("analyze: not ready to trade")
-		}
+	if oscillator.Stoch[tradingInterval] == nil {
+		return errors.New("analyze: trading interval notfound")
+	}
 
-		msg := fmt.Sprintf("%s\t\t\t latest: -%0.4f(s)\n\t%s\n", message.Symbol, float64((time.Now().UnixMilli()-message.Metadata[interval].UpdateTime))/1000.0, helpers.ResolvePositionSide(oscillator.GetRSI()))
+	if !talib.WithinRangeBound(oscillator.Stoch[tradingInterval], talib.RangeBoundRecommend) {
+		return errors.New("analyze: not ready to trade")
+	}
 
-		for _, interval := range viper.GetStringSlice("market.intervals") {
-			stoch, ok := oscillator.Stoch[interval]
-			if !ok {
-				s.logger.Error("[Process] stoch in interval invalid", zap.Any("stoch", stoch))
-				return errors.New("analyze: stoch in interval invalid")
-			}
+	var lastUpdate int64
+	if message.Candles[tradingInterval] != nil {
+		lastUpdate = message.Candles[tradingInterval].UpdateTime
+	}
+	msg := fmt.Sprintf("#%s\t\t\t [%0.2f(s) ago]\n\t%s\n", message.Symbol, float64((time.Now().UnixMilli()-lastUpdate))/1000.0, helpers.ResolvePositionSide(oscillator.GetRSI()))
 
-			msg += fmt.Sprintf("\t%03s:\t RSI %2.2f | K %02.2f | D %02.2f\n", strings.ToUpper(interval), stoch.RSI, stoch.K, stoch.D)
-		}
+	for interval, stoch := range oscillator.Stoch {
+		msg += fmt.Sprintf("\t%03s:\t RSI %2.2f | K %02.2f | D %02.2f\n", strings.ToUpper(interval), stoch.RSI, stoch.K, stoch.D)
+	}
 
-		upserted, err := s.redisCli.SetNX(ctx, fmt.Sprintf("signaler.sent.%s-%s", message.Symbol, interval), true, 10*time.Minute).Result()
-		if err != nil || !upserted {
-			return err
-		}
+	lastSent, existed := s.cache.SetEX(fmt.Sprintf("signaler.sent.%s-%s", message.Symbol, tradingInterval), time.Now().UnixMilli())
+	if existed && time.Now().Before(time.UnixMilli(lastSent.(int64)).Add(10*time.Minute)) {
+		return errors.New("analyze: signal already sent")
+	}
 
-		err = s.notify.PushNotify(ctx, viper.GetInt64("notify.channels.futures_recommendation"), msg)
-		if err != nil {
-			s.logger.Error("[Process] failed to push notification", zap.Error(err))
-			return err
-		}
+	err := s.notify.PushNotify(ctx, viper.GetInt64("notify.channels.futures_recommendation"), msg)
+	if err != nil {
+		s.logger.Error("[Process] failed to push notification", zap.Error(err))
+		return err
 	}
 
 	return nil
 }
 
-func validateMessage(message *models.CandleChart) error {
+func validateMessage(message *models.CandleSummary) error {
 	if message == nil {
 		return errors.New("notify: message invalid")
 	}

@@ -9,19 +9,19 @@ import (
 
 type Market struct {
 	mutex *sync.Mutex
-	cache map[string]*Chart // map[symbol]chart
+	cache map[string]*CandleSummary // map[symbol]summary
 	limit int32
 }
 
 func NewMarket(limit int32) *Market {
 	return &Market{
 		mutex: &sync.Mutex{},
-		cache: make(map[string]*Chart),
+		cache: make(map[string]*CandleSummary),
 		limit: limit,
 	}
 }
 
-func (c *Market) Chart(symbol string) (*Chart, error) {
+func (c *Market) CandleSummary(symbol string) (*CandleSummary, error) {
 	c.mutex.Lock()
 	defer c.mutex.Unlock()
 
@@ -32,24 +32,24 @@ func (c *Market) Chart(symbol string) (*Chart, error) {
 	return c.cache[symbol], nil
 }
 
-func (c *Market) CreateChart(symbol string) *Chart {
+func (c *Market) CreateSummary(symbol string) *CandleSummary {
 	c.mutex.Lock()
 	defer c.mutex.Unlock()
 
 	if c.cache[symbol] == nil {
-		market := new(Chart)
+		market := new(CandleSummary)
 		c.cache[symbol] = market.Init(symbol, c.limit)
 	}
 
 	return c.cache[symbol]
 }
 
-func (c *Market) UpdateChart(symbol string) *Chart {
+func (c *Market) UpdateSummary(symbol string) *CandleSummary {
 	c.mutex.Lock()
 	defer c.mutex.Unlock()
 
 	if c.cache[symbol] == nil {
-		market := new(Chart)
+		market := new(CandleSummary)
 		c.cache[symbol] = market.Init(symbol, c.limit)
 	}
 
@@ -61,14 +61,16 @@ func (c *Market) Candles(symbol, interval string) *circular.Cache {
 	defer c.mutex.Unlock()
 
 	if c.cache[symbol] == nil {
-		market := new(Chart)
+		market := new(CandleSummary)
 		c.cache[symbol] = market.Init(symbol, c.limit)
 	}
 
-	candles := c.cache[symbol].cache[interval]
-	if candles == nil {
-		candles = circular.New(c.limit)
+	summary := c.cache[symbol].cache[interval]
+	if summary == nil {
+		summary = &SummaryData{
+			Candles: circular.New(c.limit),
+		}
 	}
 
-	return candles
+	return summary.Candles
 }

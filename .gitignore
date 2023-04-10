@@ -7,3 +7,4 @@ logs
 .docker
 .env
 python
+go/pkg/mod/*

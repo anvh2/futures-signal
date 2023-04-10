@@ -1,0 +1,15 @@
+services:
+  futures-signal:
+    container_name: futures-signal
+    build:
+      context: .
+      args:
+        - VERSION=v1.0.0
+      dockerfile: ./Dockerfile
+    image: anvh2/futures-signal:v1.0.0
+    volumes:
+      - "./futures-signal/logs:/logs"
+    ports:
+      - "6000:8080"
+      - "6002:8081"
+    restart: always

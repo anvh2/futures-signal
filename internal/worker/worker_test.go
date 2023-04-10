@@ -2,25 +2,16 @@ package worker
 
 import (
 	"context"
-	"encoding/json"
-	"errors"
 	"fmt"
 	"os"
 	"os/signal"
 	"runtime"
-	"strconv"
-	"strings"
 	"syscall"
 	"testing"
 	"time"
 
-	"github.com/anvh2/futures-signal/internal/helpers"
 	logdev "github.com/anvh2/futures-signal/internal/logger"
 	"github.com/anvh2/futures-signal/internal/models"
-	"github.com/anvh2/futures-signal/internal/talib"
-	"github.com/go-redis/redis/v8"
-	"github.com/spf13/viper"
-	"go.uber.org/zap"
 )
 
 var (
@@ -29,14 +20,6 @@ var (
 
 func TestWorker(t *testing.T) {
 	log = logdev.NewDev()
-
-	redisCli := redis.NewClient(&redis.Options{
-		Addr: ":6379",
-	})
-
-	if err := redisCli.Ping(context.Background()).Err(); err != nil {
-		log.Fatal("failed to new redis cli", zap.Error(err))
-	}
 
 	w, _ := New(log, &PoolConfig{NumProcess: 64})
 	w.WithProcess(test_Process)
@@ -48,11 +31,10 @@ func TestWorker(t *testing.T) {
 		for range ticker.C {
 			for i := 0; i < 1000; i++ {
 				w.SendJob(context.Background(), func() string {
-					chart := &models.CandleChart{
+					summary := &models.CandleSummary{
 						Symbol: "BTCUSDT",
-						// Candles: make(map[string][]*models.Candlestick),
 					}
-					return chart.String()
+					return summary.String()
 				}())
 			}
 		}
@@ -85,69 +67,5 @@ func TestWorker(t *testing.T) {
 }
 
 func test_Process(ctx context.Context, data interface{}) error {
-	message := &models.CandleChart{}
-
-	if err := json.Unmarshal([]byte(fmt.Sprint(data)), message); err != nil {
-		log.Error("[Process] failed to unmarshal message", zap.Error(err))
-		return err
-	}
-
-	oscillator := &models.Oscillator{
-		Symbol: message.Symbol,
-		Stoch:  make(map[string]*models.Stoch),
-	}
-
-	defer func() {
-		message = nil
-		oscillator.Stoch = nil
-		runtime.GC()
-	}()
-
-	for interval, candles := range message.Candles {
-		low := make([]float64, len(candles))
-		high := make([]float64, len(candles))
-		close := make([]float64, len(candles))
-
-		for idx, candle := range candles {
-			l, _ := strconv.ParseFloat(candle.Low, 64)
-			low[idx] = l
-
-			h, _ := strconv.ParseFloat(candle.High, 64)
-			high[idx] = h
-
-			c, _ := strconv.ParseFloat(candle.Close, 64)
-			close[idx] = c
-		}
-
-		_, rsi := talib.RSIPeriod(14, close)
-		k, d, _ := talib.KDJ(9, 3, 3, high, low, close)
-
-		stoch := &models.Stoch{
-			RSI: rsi[len(rsi)-1],
-			K:   k[len(k)-1],
-			D:   d[len(d)-1],
-		}
-
-		oscillator.Stoch[interval] = stoch
-	}
-
-	if !talib.WithinRangeBound(oscillator.Stoch["1h"], talib.RangeBoundRecommend) {
-		return errors.New("analyze: not ready to trade")
-	}
-
-	msg := fmt.Sprintf("%s\t\t\t latest: -%0.4f(s)\n\t%s\n", message.Symbol, float64((time.Now().UnixMilli()-message.Metadata["1h"].UpdateTime))/1000.0, helpers.ResolvePositionSide(oscillator.GetRSI()))
-
-	for _, interval := range viper.GetStringSlice("market.intervals") {
-		stoch, ok := oscillator.Stoch[interval]
-		if !ok {
-			log.Error("[Process] stoch in interval invalid", zap.Any("stoch", stoch))
-			return errors.New("analyze: stoch in interval invalid")
-		}
-
-		msg += fmt.Sprintf("\t%03s:\t RSI %2.2f | K %02.2f | D %02.2f\n", strings.ToUpper(interval), stoch.RSI, stoch.K, stoch.D)
-	}
-
-	// delay
-
 	return nil
 }

@@ -25,14 +25,14 @@ func (s *Server) consuming() error {
 			go func() {
 				defer func() {
 					if r := recover(); r != nil {
-						s.logger.Error("[Consume] failed to start, recovered", zap.Any("error", r), zap.String("stacktrace", string(debug.Stack())))
+						s.logger.Error("[CandlesConsumption] failed to start, recovered", zap.Any("error", r), zap.String("stacktrace", string(debug.Stack())))
 					}
 				}()
 
 				ctx, cancel := context.WithCancel(context.Background())
 				defer cancel()
 
-				s.process(ctx, pair)
+				s.processCandlesConsumption(ctx, pair)
 			}()
 		}
 
@@ -44,39 +44,39 @@ func (s *Server) consuming() error {
 	return nil
 }
 
-func (s *Server) process(ctx context.Context, pair map[string]string) (done chan struct{}, stop chan struct{}) {
-	done, stop, err := futures.WsCombinedKlineServe(pair, s.handleConsumeCandles, s.handleConsumeError)
+func (s *Server) processCandlesConsumption(ctx context.Context, pair map[string]string) (done chan struct{}, stop chan struct{}) {
+	done, stop, err := futures.WsCombinedKlineServe(pair, s.handleCandlesConsumption, s.handleConsumeError)
 	if err != nil {
-		s.logger.Fatal("[Consume] failed to connect to klines stream data", zap.Error(err))
+		s.logger.Fatal("[CandlesConsumption] failed to connect to klines stream data", zap.Error(err))
 		return
 	}
 
-	fmt.Println("[Consume] start consume data from websocket")
+	fmt.Println("[CandlesConsumption] start consume data from websocket")
 
 	select {
 	case <-done:
-		s.logger.Error("[Consume] resume failed connection from done channel")
+		s.logger.Error("[CandlesConsumption] resume failed connection from done channel")
 	case <-stop:
-		s.logger.Error("[Consume] resume failed connection from stop channel")
+		s.logger.Error("[CandlesConsumption] resume failed connection from stop channel")
 	case <-ctx.Done():
-		s.logger.Info("[Consume] consume finished, quit process")
+		s.logger.Info("[CandlesConsumption] consume finished, quit process")
 		return
 	}
 
-	s.process(ctx, pair)
+	s.processCandlesConsumption(ctx, pair)
 	return
 }
 
-func (s *Server) handleConsumeCandles(event *futures.WsKlineEvent) {
+func (s *Server) handleCandlesConsumption(event *futures.WsKlineEvent) {
 	_, err := s.exchangeCache.Get(event.Symbol)
 	if err == errors.ErrorSymbolNotFound {
-		s.logger.Info("[Consume] no need to handle this symbol", zap.String("symbol", event.Symbol))
+		s.logger.Info("[CandlesConsumption] no need to handle this symbol", zap.String("symbol", event.Symbol))
 		return
 	}
 
-	chart, err := s.marketCache.Chart(event.Symbol)
+	chart, err := s.marketCache.CandleSummary(event.Symbol)
 	if err == errors.ErrorChartNotFound {
-		chart = s.marketCache.CreateChart(event.Symbol)
+		chart = s.marketCache.CreateSummary(event.Symbol)
 	}
 
 	candles, err := chart.Candles(event.Kline.Interval)
@@ -119,5 +119,5 @@ func (s *Server) handleConsumeCandles(event *futures.WsKlineEvent) {
 }
 
 func (s *Server) handleConsumeError(err error) {
-	s.logger.Error("[Consume] failed to recieve data", zap.Error(err))
+	s.logger.Error("[CandlesConsumption] failed to recieve data", zap.Error(err))
 }

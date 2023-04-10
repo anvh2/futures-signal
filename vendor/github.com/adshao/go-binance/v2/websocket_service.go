@@ -418,6 +418,7 @@ type WsAggTradeEvent struct {
 
 // WsTradeHandler handle websocket trade event
 type WsTradeHandler func(event *WsTradeEvent)
+type WsCombinedTradeHandler func(event *WsCombinedTradeEvent)
 
 // WsTradeServe serve websocket handler with a symbol
 func WsTradeServe(symbol string, handler WsTradeHandler, errHandler ErrHandler) (doneC, stopC chan struct{}, err error) {
@@ -425,6 +426,25 @@ func WsTradeServe(symbol string, handler WsTradeHandler, errHandler ErrHandler) 
 	cfg := newWsConfig(endpoint)
 	wsHandler := func(message []byte) {
 		event := new(WsTradeEvent)
+		err := json.Unmarshal(message, event)
+		if err != nil {
+			errHandler(err)
+			return
+		}
+		handler(event)
+	}
+	return wsServe(cfg, wsHandler, errHandler)
+}
+
+func WsCombinedTradeServe(symbols []string, handler WsCombinedTradeHandler, errHandler ErrHandler) (doneC, stopC chan struct{}, err error) {
+	endpoint := getCombinedEndpoint()
+	for _, s := range symbols {
+		endpoint += fmt.Sprintf("%s@trade/", strings.ToLower(s))
+	}
+	endpoint = endpoint[:len(endpoint)-1]
+	cfg := newWsConfig(endpoint)
+	wsHandler := func(message []byte) {
+		event := new(WsCombinedTradeEvent)
 		err := json.Unmarshal(message, event)
 		if err != nil {
 			errHandler(err)
@@ -450,16 +470,25 @@ type WsTradeEvent struct {
 	Placeholder   bool   `json:"M"` // add this field to avoid case insensitive unmarshaling
 }
 
+type WsCombinedTradeEvent struct {
+	Stream string       `json:"stream"`
+	Data   WsTradeEvent `json:"data"`
+}
+
 // WsUserDataEvent define user data event
 type WsUserDataEvent struct {
 	Event             UserDataEventType `json:"e"`
 	Time              int64             `json:"E"`
 	TransactionTime   int64             `json:"T"`
 	AccountUpdateTime int64             `json:"u"`
-	AccountUpdate     []WsAccountUpdate `json:"B"`
+	AccountUpdate     WsAccountUpdateList
 	BalanceUpdate     WsBalanceUpdate
 	OrderUpdate       WsOrderUpdate
 	OCOUpdate         WsOCOUpdate
+}
+
+type WsAccountUpdateList struct {
+	WsAccountUpdates []WsAccountUpdate `json:"B"`
 }
 
 // WsAccountUpdate define account update
@@ -475,45 +504,55 @@ type WsBalanceUpdate struct {
 }
 
 type WsOrderUpdate struct {
-	Symbol            string          `json:"s"`
-	ClientOrderId     string          `json:"c"`
-	Side              string          `json:"S"`
-	Type              string          `json:"o"`
-	TimeInForce       TimeInForceType `json:"f"`
-	Volume            string          `json:"q"`
-	Price             string          `json:"p"`
-	StopPrice         string          `json:"P"`
-	IceBergVolume     string          `json:"F"`
-	OrderListId       int64           `json:"g"` // for OCO
-	OrigCustomOrderId string          `json:"C"` // customized order ID for the original order
-	ExecutionType     string          `json:"x"` // execution type for this event NEW/TRADE...
-	Status            string          `json:"X"` // order status
-	RejectReason      string          `json:"r"`
-	Id                int64           `json:"i"` // order id
-	LatestVolume      string          `json:"l"` // quantity for the latest trade
-	FilledVolume      string          `json:"z"`
-	LatestPrice       string          `json:"L"` // price for the latest trade
-	FeeAsset          string          `json:"N"`
-	FeeCost           string          `json:"n"`
-	TransactionTime   int64           `json:"T"`
-	TradeId           int64           `json:"t"`
-	IsInOrderBook     bool            `json:"w"` // is the order in the order book?
-	IsMaker           bool            `json:"m"` // is this order maker?
-	CreateTime        int64           `json:"O"`
-	FilledQuoteVolume string          `json:"Z"` // the quote volume that already filled
-	LatestQuoteVolume string          `json:"Y"` // the quote volume for the latest trade
-	QuoteVolume       string          `json:"Q"`
+	Symbol                  string          `json:"s"`
+	ClientOrderId           string          `json:"c"`
+	Side                    string          `json:"S"`
+	Type                    string          `json:"o"`
+	TimeInForce             TimeInForceType `json:"f"`
+	Volume                  string          `json:"q"`
+	Price                   string          `json:"p"`
+	StopPrice               string          `json:"P"`
+	TrailingDelta           int64           `json:"d"` // Trailing Delta
+	IceBergVolume           string          `json:"F"`
+	OrderListId             int64           `json:"g"` // for OCO
+	OrigCustomOrderId       string          `json:"C"` // customized order ID for the original order
+	ExecutionType           string          `json:"x"` // execution type for this event NEW/TRADE...
+	Status                  string          `json:"X"` // order status
+	RejectReason            string          `json:"r"`
+	Id                      int64           `json:"i"` // order id
+	LatestVolume            string          `json:"l"` // quantity for the latest trade
+	FilledVolume            string          `json:"z"`
+	LatestPrice             string          `json:"L"` // price for the latest trade
+	FeeAsset                string          `json:"N"`
+	FeeCost                 string          `json:"n"`
+	TransactionTime         int64           `json:"T"`
+	TradeId                 int64           `json:"t"`
+	IsInOrderBook           bool            `json:"w"` // is the order in the order book?
+	IsMaker                 bool            `json:"m"` // is this order maker?
+	CreateTime              int64           `json:"O"`
+	FilledQuoteVolume       string          `json:"Z"` // the quote volume that already filled
+	LatestQuoteVolume       string          `json:"Y"` // the quote volume for the latest trade
+	QuoteVolume             string          `json:"Q"`
+	TrailingTime            int64           `json:"D"` // Trailing Time
+	StrategyId              int64           `json:"j"` // Strategy ID
+	StrategyType            int64           `json:"J"` // Strategy Type
+	WorkingTime             int64           `json:"W"` // Working Time
+	SelfTradePreventionMode string          `json:"V"`
 }
 
 type WsOCOUpdate struct {
-	Symbol          string       `json:"s"`
-	OrderListId     int64        `json:"g"`
-	ContingencyType string       `json:"c"`
-	ListStatusType  string       `json:"l"`
-	ListOrderStatus string       `json:"L"`
-	RejectReason    string       `json:"r"`
-	ClientOrderId   string       `json:"C"` // List Client Order ID
-	Orders          []WsOCOOrder `json:"O"`
+	Symbol          string `json:"s"`
+	OrderListId     int64  `json:"g"`
+	ContingencyType string `json:"c"`
+	ListStatusType  string `json:"l"`
+	ListOrderStatus string `json:"L"`
+	RejectReason    string `json:"r"`
+	ClientOrderId   string `json:"C"` // List Client Order ID
+	Orders          WsOCOOrderList
+}
+
+type WsOCOOrderList struct {
+	WsOCOOrders []WsOCOOrder `json:"O"`
 }
 
 type WsOCOOrder struct {
@@ -546,7 +585,11 @@ func WsUserDataServe(listenKey string, handler WsUserDataHandler, errHandler Err
 
 		switch UserDataEventType(j.Get("e").MustString()) {
 		case UserDataEventTypeOutboundAccountPosition:
-
+			err = json.Unmarshal(message, &event.AccountUpdate)
+			if err != nil {
+				errHandler(err)
+				return
+			}
 		case UserDataEventTypeBalanceUpdate:
 			err = json.Unmarshal(message, &event.BalanceUpdate)
 			if err != nil {
@@ -728,6 +771,11 @@ type WsBookTickerEvent struct {
 	BestAskQty   string `json:"A"`
 }
 
+type WsCombinedBookTickerEvent struct {
+	Data   *WsBookTickerEvent `json:"data"`
+	Stream string             `json:"stream"`
+}
+
 // WsBookTickerHandler handle websocket that pushes updates to the best bid or ask price or quantity in real-time for a specified symbol.
 type WsBookTickerHandler func(event *WsBookTickerEvent)
 
@@ -743,6 +791,26 @@ func WsBookTickerServe(symbol string, handler WsBookTickerHandler, errHandler Er
 			return
 		}
 		handler(event)
+	}
+	return wsServe(cfg, wsHandler, errHandler)
+}
+
+// WsCombinedBookTickerServe is similar to WsBookTickerServe, but it is for multiple symbols
+func WsCombinedBookTickerServe(symbols []string, handler WsBookTickerHandler, errHandler ErrHandler) (doneC, stopC chan struct{}, err error) {
+	endpoint := baseCombinedMainURL
+	for _, s := range symbols {
+		endpoint += fmt.Sprintf("%s@bookTicker", strings.ToLower(s)) + "/"
+	}
+	endpoint = endpoint[:len(endpoint)-1]
+	cfg := newWsConfig(endpoint)
+	wsHandler := func(message []byte) {
+		event := new(WsCombinedBookTickerEvent)
+		err := json.Unmarshal(message, event)
+		if err != nil {
+			errHandler(err)
+			return
+		}
+		handler(event.Data)
 	}
 	return wsServe(cfg, wsHandler, errHandler)
 }

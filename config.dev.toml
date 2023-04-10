@@ -1,5 +1,5 @@
 [signaler]
-  log_path = "./logs/signaler.log"
+  log_path = "/Users/anvh/go/src/github.com/anvh2/futures-signal/logs/signaler.log"
 
 [redis]
   addr = "localhost:6379"
@@ -9,7 +9,7 @@
 
 [chart]
   [chart.candles]
-    limit = 50
+    limit = 500
 
 [binance]
   [binance.rate_limit]

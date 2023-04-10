@@ -1,0 +1,481 @@
+{"level":"info","ts":"2023-04-07T01:51:58.368Z","caller":"server/crawl.go:88","message":"[Crawling] cache symbols success","total":183}
+{"level":"info","ts":"2023-04-07T01:51:58.629Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BTCUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:58.652Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BTCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:58.758Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ETHUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:58.941Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ETHUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:59.042Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BCHUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:59.242Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BCHUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:59.330Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"XRPUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:59.463Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"EOSUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:59.526Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"XRPUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:59.586Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LTCUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:59.652Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"EOSUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:59.788Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LTCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:59.867Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"TRXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:59.912Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"TRXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:51:59.994Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ETCUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.035Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ETCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.119Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LINKUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.251Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"XLMUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.314Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LINKUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.374Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ADAUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.433Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"XLMUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.502Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"XMRUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.552Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ADAUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.622Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DASHUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.669Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"XMRUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.742Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ZECUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.790Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DASHUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.859Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"XTZUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.917Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ZECUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:00.981Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BNBUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.033Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"XTZUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.101Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ATOMUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.152Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BNBUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.220Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ONTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.341Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"IOTAUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.436Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ATOMUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.463Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BATUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.557Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ONTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.582Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"VETUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.680Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"IOTAUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.706Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"NEOUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.804Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BATUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.831Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"QTUMUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.927Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"VETUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:01.949Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"IOSTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.048Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"NEOUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.064Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"THETAUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.165Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"QTUMUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.182Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ALGOUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.285Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"IOSTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.300Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ZILUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.403Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"THETAUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.416Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"KNCUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.534Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ALGOUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.540Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ZRXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.656Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ZILUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.661Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"COMPUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.792Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"OMGUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.800Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"KNCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.929Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DOGEUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:02.933Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ZRXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.079Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SXPUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.080Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"COMPUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.226Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"OMGUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.227Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"KAVAUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.362Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DOGEUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.364Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BANDUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.502Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SXPUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.504Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RLCUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.650Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"KAVAUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.657Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"WAVESUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.794Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BANDUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.796Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MKRUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.934Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RLCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:03.937Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SNXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:04.073Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"WAVESUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:04.075Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DOTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:04.222Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MKRUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:04.360Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SNXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:04.363Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DEFIUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:04.502Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DOTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:04.504Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"YFIUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:04.642Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DEFIUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:04.790Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"YFIUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:04.797Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BALUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:04.915Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BALUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:04.918Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CRVUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.056Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CRVUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.058Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"TRBUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.193Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"TRBUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.194Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RUNEUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.345Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RUNEUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.346Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SUSHIUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.472Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SRMUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.477Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SUSHIUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.606Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SRMUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.611Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"EGLDUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.746Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"EGLDUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.749Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SOLUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.886Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SOLUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:05.890Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ICXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.021Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ICXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.024Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"STORJUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.163Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"STORJUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.166Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BLZUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.301Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BLZUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.304Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"UNIUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.442Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"UNIUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.448Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"AVAXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.569Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"AVAXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.575Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FTMUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.702Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"HNTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.709Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FTMUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.830Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"HNTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.834Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ENJUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.974Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ENJUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:06.975Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FLMUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.116Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FLMUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.120Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"TOMOUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.249Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"TOMOUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.253Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RENUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.384Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RENUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.388Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"KSMUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.522Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"KSMUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.524Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"NEARUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.659Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"NEARUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.662Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"AAVEUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.802Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"AAVEUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.803Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FILUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.956Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FILUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:07.957Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RSRUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.085Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LRCUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.094Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RSRUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.209Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MATICUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.216Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LRCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.334Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"OCEANUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.339Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MATICUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.450Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CVCUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.461Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"OCEANUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.587Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CVCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.593Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BELUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.717Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BELUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.725Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CTKUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.853Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CTKUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.856Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"AXSUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.988Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"AXSUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:08.992Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ALPHAUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.116Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ALPHAUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.121Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ZENUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.244Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ZENUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.254Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SKLUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.364Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SKLUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.375Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"GRTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.493Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"GRTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.499Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"1INCHUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.634Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"1INCHUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.639Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CHZUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.779Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CHZUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.781Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SANDUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.917Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SANDUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:09.921Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ANKRUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.044Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BTSUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.054Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ANKRUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.302Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LITUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.323Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BTSUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.430Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"UNFIUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.442Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LITUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.555Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"REEFUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.566Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"UNFIUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.686Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RVNUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.693Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"REEFUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.816Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SFPUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.820Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RVNUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.951Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"XEMUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:10.956Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SFPUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.080Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BTCSTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.088Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"XEMUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.240Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BTCSTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.243Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"COTIUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.375Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"COTIUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.379Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CHRUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.505Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CHRUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.509Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MANAUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.637Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MANAUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.640Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ALICEUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.776Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ALICEUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.780Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"HBARUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.914Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"HBARUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:11.917Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ONEUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.053Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ONEUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.056Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LINAUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.201Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LINAUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.202Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"STMXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.332Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"STMXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.336Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DENTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.468Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DENTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.472Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CELRUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.609Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CELRUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.612Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"HOTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.743Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"HOTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.745Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MTLUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.883Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MTLUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:12.885Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"OGNUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.024Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"OGNUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.027Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"NKNUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.154Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SCUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.161Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"NKNUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.298Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.303Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DGBUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.425Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DGBUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.432Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"1000SHIBUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.552Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"1000SHIBUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.558Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BAKEUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.699Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BAKEUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.700Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"GTCUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.839Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"GTCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.841Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BTCDOMUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.983Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BTCDOMUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:13.986Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"IOTXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.109Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"IOTXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.113Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"AUDIOUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.242Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RAYUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.248Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"AUDIOUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.375Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RAYUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.384Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"C98USDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.519Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MASKUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.523Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"C98USDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.644Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ATAUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.650Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MASKUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.764Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DYDXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.772Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ATAUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.893Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"1000XECUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:14.898Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DYDXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.028Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"GALAUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.031Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"1000XECUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.169Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CELOUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.173Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"GALAUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.310Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ARUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.312Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CELOUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.454Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"KLAYUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.455Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ARUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.597Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ARPAUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.599Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"KLAYUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.736Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CTSIUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.739Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ARPAUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.886Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CTSIUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:15.899Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LPTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.010Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LPTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.019Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ENSUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.138Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ENSUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.146Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"PEOPLEUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.272Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"PEOPLEUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.278Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ANTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.416Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ANTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.418Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ROSEUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.558Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ROSEUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.560Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DUSKUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.700Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FLOWUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.701Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DUSKUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.841Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FLOWUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.843Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"IMXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.982Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"IMXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:16.984Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"API3USDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.124Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"API3USDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.127Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"GMTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.263Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"GMTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.265Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"APEUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.421Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"WOOUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.425Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"APEUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.539Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FTTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.550Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"WOOUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.667Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FTTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.670Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"JASMYUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.806Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"JASMYUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.807Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DARUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.940Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"DARUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:17.944Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"GALUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.082Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"GALUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.090Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"OPUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.221Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"OPUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.224Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"INJUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.361Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"INJUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.363Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"STGUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.505Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"STGUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.507Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FOOTBALLUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.642Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FOOTBALLUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.646Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SPELLUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.781Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SPELLUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.787Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"1000LUNCUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.908Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"1000LUNCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:18.912Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LUNA2USDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.035Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LUNA2USDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.045Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LDOUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.163Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LDOUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.168Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CVXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.296Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CVXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.299Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ICPUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.435Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ICPUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.439Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"APTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.580Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"APTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.582Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"QNTUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.720Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"QNTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.722Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BLUEBIRDUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.865Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BLUEBIRDUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:19.866Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FETUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.009Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FXSUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.010Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FETUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.155Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"FXSUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.159Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"HOOKUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.359Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"HOOKUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.363Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MAGICUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.484Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MAGICUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.491Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"TUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.611Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"TUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.617Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RNDRUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.741Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RNDRUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.748Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"HIGHUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.869Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"HIGHUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:20.874Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MINAUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.006Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"MINAUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.009Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ASTRUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.148Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ASTRUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.151Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"AGIXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.290Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"AGIXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.291Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"PHBUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.429Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"PHBUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.432Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"GMXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.569Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"GMXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.573Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CFXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.711Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CFXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.714Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"STXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.859Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"STXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:21.861Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"COCOSUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.022Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BNXUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.023Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"COCOSUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.146Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"BNXUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.153Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ACHUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.274Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ACHUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.281Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SSVUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.405Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"SSVUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.410Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CKBUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.538Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"CKBUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.543Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"PERPUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.675Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"PERPUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.679Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"TRUUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.822Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"TRUUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.824Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LQTYUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.966Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LQTYUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:22.968Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"USDCUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:23.098Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"USDCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:23.102Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"IDUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:23.236Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"IDUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:23.240Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ARBUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:23.381Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"ARBUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:23.382Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"JOEUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:23.523Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"JOEUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:23.525Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"TLMUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:23.665Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"TLMUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:23.667Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"AMBUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:23.819Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"AMBUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:23.824Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LEVERUSDT","interval":"15m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:23.933Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RDNTUSDT","interval":"15m","total":152}
+{"level":"info","ts":"2023-04-07T01:52:23.946Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"LEVERUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:24.044Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"HFTUSDT","interval":"15m","total":56}
+{"level":"info","ts":"2023-04-07T01:52:24.070Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"RDNTUSDT","interval":"5m","total":455}
+{"level":"info","ts":"2023-04-07T01:52:24.183Z","caller":"server/crawl.go:135","message":"[Crawling] cache market success","symbol":"HFTUSDT","interval":"5m","total":167}
+{"level":"info","ts":"2023-04-07T01:52:24.185Z","caller":"server/crawl.go:143","message":"[Crawling] success to crawl data","total":366,"take(s)":25.811932719}
+{"level":"error","ts":"2023-04-07T01:52:34.413Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.2870\",\"c\":\"0.2870\",\"l\":\"0.2870\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:34.448Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1679580300000,\"e\":1679580599999,\"h\":\"1.4330\",\"c\":\"1.4330\",\"l\":\"1.4330\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:34.488Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.10201\",\"c\":\"0.10201\",\"l\":\"0.10201\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:34.558Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.01251\",\"c\":\"0.01251\",\"l\":\"0.01251\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:34.629Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.003653\",\"c\":\"0.003653\",\"l\":\"0.003653\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:52:34.656Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SRMUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:52:34.659Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.248\",\"c\":\"0.248\",\"l\":\"0.248\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:52:34.777Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"HNTUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:52:34.790Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"1.5900\",\"c\":\"1.5900\",\"l\":\"1.5900\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:52:34.797Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"BTSUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:34.837Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"CVCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:34.915Z","caller":"telegram/telegram.go:57","message":"[TelegramBot] push message success","message":"#TOMOUSDT\t\t\t [1.21(s) ago]\n\tLONG\n\t15M:\t RSI 74.62 | K 83.82 | D 73.18\n\t05M:\t RSI 86.27 | K 82.92 | D 85.10\n","messageId":675}
+{"level":"info","ts":"2023-04-07T01:52:34.978Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:35.094Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"RAYUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:35.108Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"FTTUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:52:44.412Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.2870\",\"c\":\"0.2870\",\"l\":\"0.2870\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:44.442Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1679580300000,\"e\":1679580599999,\"h\":\"1.4330\",\"c\":\"1.4330\",\"l\":\"1.4330\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:44.513Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.10201\",\"c\":\"0.10201\",\"l\":\"0.10201\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:44.573Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.01251\",\"c\":\"0.01251\",\"l\":\"0.01251\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:44.643Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.003653\",\"c\":\"0.003653\",\"l\":\"0.003653\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:44.706Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.248\",\"c\":\"0.248\",\"l\":\"0.248\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:52:44.726Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SRMUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:44.735Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"HNTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:44.753Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"CVCUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:52:44.794Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"1.5900\",\"c\":\"1.5900\",\"l\":\"1.5900\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:52:44.903Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"BTSUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:44.955Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:44.963Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"RAYUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:45.126Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"FTTUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:52:54.421Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.2870\",\"c\":\"0.2870\",\"l\":\"0.2870\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:54.451Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1679580300000,\"e\":1679580599999,\"h\":\"1.4330\",\"c\":\"1.4330\",\"l\":\"1.4330\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:54.511Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.10201\",\"c\":\"0.10201\",\"l\":\"0.10201\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:54.571Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.01251\",\"c\":\"0.01251\",\"l\":\"0.01251\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:54.637Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.003653\",\"c\":\"0.003653\",\"l\":\"0.003653\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:52:54.687Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.248\",\"c\":\"0.248\",\"l\":\"0.248\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:52:54.784Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SRMUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:52:54.788Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"1.5900\",\"c\":\"1.5900\",\"l\":\"1.5900\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:52:54.812Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"HNTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:54.855Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"CVCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:54.931Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"BTSUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:55.106Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:55.130Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"RAYUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:52:55.180Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"FTTUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:04.437Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.2870\",\"c\":\"0.2870\",\"l\":\"0.2870\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:04.498Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1679580300000,\"e\":1679580599999,\"h\":\"1.4330\",\"c\":\"1.4330\",\"l\":\"1.4330\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:04.559Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.10201\",\"c\":\"0.10201\",\"l\":\"0.10201\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:04.589Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.01251\",\"c\":\"0.01251\",\"l\":\"0.01251\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:04.661Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.003653\",\"c\":\"0.003653\",\"l\":\"0.003653\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:04.739Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SRMUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:04.745Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.248\",\"c\":\"0.248\",\"l\":\"0.248\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:04.750Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"HNTUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:04.820Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"1.5900\",\"c\":\"1.5900\",\"l\":\"1.5900\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:04.829Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"CVCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:04.837Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"BTSUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:05.059Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:05.064Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"RAYUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:05.179Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"FTTUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:14.440Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.2870\",\"c\":\"0.2870\",\"l\":\"0.2870\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:14.478Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1679580300000,\"e\":1679580599999,\"h\":\"1.4330\",\"c\":\"1.4330\",\"l\":\"1.4330\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:14.549Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.10201\",\"c\":\"0.10201\",\"l\":\"0.10201\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:14.594Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.01251\",\"c\":\"0.01251\",\"l\":\"0.01251\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:14.729Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SRMUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:14.745Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"HNTUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:14.806Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"CVCUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:14.841Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.003653\",\"c\":\"0.003653\",\"l\":\"0.003653\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:14.843Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.248\",\"c\":\"0.248\",\"l\":\"0.248\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:15.037Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"BTSUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:15.122Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SCUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:15.169Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"1.5900\",\"c\":\"1.5900\",\"l\":\"1.5900\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:15.221Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"RAYUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:15.488Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"FTTUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:24.428Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.2870\",\"c\":\"0.2870\",\"l\":\"0.2870\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:24.448Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1679580300000,\"e\":1679580599999,\"h\":\"1.4330\",\"c\":\"1.4330\",\"l\":\"1.4330\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:24.498Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.10201\",\"c\":\"0.10201\",\"l\":\"0.10201\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:24.579Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.01251\",\"c\":\"0.01251\",\"l\":\"0.01251\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:24.650Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.003653\",\"c\":\"0.003653\",\"l\":\"0.003653\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:24.668Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SRMUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:24.679Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.248\",\"c\":\"0.248\",\"l\":\"0.248\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:24.732Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"HNTUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:24.807Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"1.5900\",\"c\":\"1.5900\",\"l\":\"1.5900\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:24.857Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"CVCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:24.956Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"BTSUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:24.979Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"RAYUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:25.019Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:25.176Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"FTTUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:34.402Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.2870\",\"c\":\"0.2870\",\"l\":\"0.2870\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:34.443Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1679580300000,\"e\":1679580599999,\"h\":\"1.4330\",\"c\":\"1.4330\",\"l\":\"1.4330\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:34.533Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.10201\",\"c\":\"0.10201\",\"l\":\"0.10201\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:34.554Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.01251\",\"c\":\"0.01251\",\"l\":\"0.01251\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:34.631Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SRMUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:34.642Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.003653\",\"c\":\"0.003653\",\"l\":\"0.003653\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:34.670Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.248\",\"c\":\"0.248\",\"l\":\"0.248\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:34.736Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"HNTUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:34.785Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"1.5900\",\"c\":\"1.5900\",\"l\":\"1.5900\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:34.792Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"BTSUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:34.860Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"CVCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:34.983Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:35.050Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"RAYUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:35.115Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"FTTUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:44.394Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.2870\",\"c\":\"0.2870\",\"l\":\"0.2870\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:44.416Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1679580300000,\"e\":1679580599999,\"h\":\"1.4330\",\"c\":\"1.4330\",\"l\":\"1.4330\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:44.508Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.10201\",\"c\":\"0.10201\",\"l\":\"0.10201\"}","error":"candles: obsolete"}
+{"level":"error","ts":"2023-04-07T01:53:44.543Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.01251\",\"c\":\"0.01251\",\"l\":\"0.01251\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:44.623Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SRMUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:44.625Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1665630300000,\"e\":1665630599999,\"h\":\"0.003653\",\"c\":\"0.003653\",\"l\":\"0.003653\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:44.677Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"HNTUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:44.678Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"0.248\",\"c\":\"0.248\",\"l\":\"0.248\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:44.737Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"CVCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:44.767Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"BTSUSDT","interval":"5m","total":500}
+{"level":"error","ts":"2023-04-07T01:53:44.786Z","caller":"server/produce.go:50","message":"[Produce] the last candle is not current candle","lastCandle":"{\"s\":1672414500000,\"e\":1672414799999,\"h\":\"1.5900\",\"c\":\"1.5900\",\"l\":\"1.5900\"}","error":"candles: obsolete"}
+{"level":"info","ts":"2023-04-07T01:53:44.965Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"SCUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:45.013Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"RAYUSDT","interval":"5m","total":500}
+{"level":"info","ts":"2023-04-07T01:53:45.135Z","caller":"server/retry.go:56","message":"[Retry] success","symbol":"FTTUSDT","interval":"5m","total":500}

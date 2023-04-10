@@ -1,4 +1,4 @@
-FROM golang:1.18 as builder
+FROM golang:1.20 as builder
 
 ENV GO111MODULE=on
 
@@ -18,8 +18,6 @@ COPY --from=builder /build /
 
 # Run server command
 ENV TZ Asia/Saigon
-
-RUN pwd && ls
 
 # expose some necessary port
 EXPOSE 8080

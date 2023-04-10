@@ -50,7 +50,7 @@ func (s *Server) retrying() {
 							Close:     e.Close,
 						}
 
-						s.marketCache.UpdateChart(symbol.symbol).CreateCandle(symbol.interval, candle)
+						s.marketCache.UpdateSummary(symbol.symbol).CreateCandle(symbol.interval, candle)
 					}
 
 					s.logger.Info("[Retry] success", zap.String("symbol", symbol.symbol), zap.String("interval", symbol.interval), zap.Int("total", len(resp)))
