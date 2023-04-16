@@ -54,7 +54,7 @@ func (m *CandleSummary) CreateCandle(interval string, candle *models.Candlestick
 		}
 	}
 
-	m.cache[interval].Candles.Create(candle)
+	m.cache[interval].Candles.Insert(candle)
 	m.cache[interval].UpdateTime = time.Now().UnixMilli()
 	return nil
 }

@@ -18,9 +18,9 @@ func (s *Oscillator) String() string {
 	return string(b)
 }
 
-func (o *Oscillator) GetRSI() float64 {
-	if o.Stoch == nil || o.Stoch["1h"] == nil {
+func (o *Oscillator) GetRSI(interval string) float64 {
+	if o.Stoch == nil || o.Stoch[interval] == nil {
 		return 0
 	}
-	return o.Stoch["1h"].RSI
+	return o.Stoch[interval].RSI
 }

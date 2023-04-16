@@ -23,7 +23,7 @@ func New(size int32) *Cache {
 	}
 }
 
-func (l *Cache) Create(data interface{}) int32 {
+func (l *Cache) Insert(data interface{}) int32 {
 	l.mutex.Lock()
 	defer l.mutex.Unlock()
 
@@ -48,7 +48,19 @@ func (l *Cache) Update(idx int32, data interface{}) {
 	l.data[idx] = data
 }
 
-func (l *Cache) Last() (interface{}, int32) {
+func (l *Cache) Read() []interface{} {
+	l.mutex.RLock()
+	defer l.mutex.RUnlock()
+
+	data := make([]interface{}, l.len)
+	for i := int32(0); i < l.len; i++ {
+		data[i] = l.data[i]
+	}
+
+	return data
+}
+
+func (l *Cache) Tail() (interface{}, int32) {
 	if l == nil {
 		return nil, -1
 	}
@@ -65,18 +77,6 @@ func (l *Cache) Last() (interface{}, int32) {
 	}
 
 	return l.data[idx], idx
-}
-
-func (l *Cache) Range() []interface{} {
-	l.mutex.RLock()
-	defer l.mutex.RUnlock()
-
-	data := make([]interface{}, l.len)
-	for i := int32(0); i < l.len; i++ {
-		data[i] = l.data[i]
-	}
-
-	return data
 }
 
 func (l *Cache) Sorted() []interface{} {

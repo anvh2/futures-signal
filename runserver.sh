@@ -2,7 +2,7 @@
 #
 # Startup script for Main
 export APPNAME="futures-signal"
-export CONF=config.toml
+export CONF=config.prd.toml
 export ENV=.env
 pid_file=tmp/$APPNAME.pid
 log_file=tmp/$APPNAME.log

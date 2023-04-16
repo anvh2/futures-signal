@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"testing"
-	"time"
 
 	"github.com/anvh2/futures-signal/internal/models"
 )
@@ -15,7 +14,7 @@ func TestCheckCurrentCandle(t *testing.T) {
 
 	json.Unmarshal([]byte(data), candle)
 
-	candle.OpenTime = time.Now().Add(-4*time.Minute + 59*time.Second).UnixMilli()
+	// candle.OpenTime = time.Now().Add(-4*time.Minute + 59*time.Second).UnixMilli()
 
 	err := CheckCurrentCandle(candle, "5m")
 	fmt.Println(err)

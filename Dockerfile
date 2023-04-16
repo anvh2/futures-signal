@@ -21,4 +21,4 @@ ENV TZ Asia/Saigon
 
 # expose some necessary port
 EXPOSE 8080
-ENTRYPOINT ["/app", "start", "--env", ".env", "--config", "config.toml"]
+ENTRYPOINT ["/app", "start", "--env", ".env", "--config", "config.prd.toml"]
